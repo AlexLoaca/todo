@@ -45,7 +45,7 @@ CREATE TABLE `task` (
   `title` varchar(400) NOT NULL,
   `description` varchar(30000) NOT NULL,
   `expiration` date NOT NULL,
-  `complete` tinyint(1) NOT NULL,
+  `complete` tinyint(1) DEFAULT 0,
   `user_id` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
